@@ -15,12 +15,17 @@ use Mix.Config
 # which you typically run after static files are built.
 config :neoscan_web, NeoscanWeb.Endpoint,
 http: [port: {:system, "PORT"}, compress: true],
-url: [scheme: "https", host: "neoscan.io", port: 443],
+url: [scheme: "https", host: "neoscan-testnet.io", port: 443],
 force_ssl: [rewrite_on: [:x_forwarded_proto]],
 cache_static_manifest: "priv/static/cache_manifest.json",
+<<<<<<< 4aea9afdbdb1420d4b43aa932a9fb97a76faf5d1
 server: true,
 secret_key_base: "set_key",
 check_origin: ["https://neoscan.io", "https://www.neoscan.io"]
+=======
+secret_key_base: System.get_env("SECRET_KEY_BASE"),
+check_origin: ["https://neoscan-testnet.io", "https://www.neoscan-testnet.io"]
+>>>>>>> set testnet
 
 # ## SSL Support
 #

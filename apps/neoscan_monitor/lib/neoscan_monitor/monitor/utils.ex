@@ -4,17 +4,17 @@ defmodule NeoscanMonitor.Utils do
 
   def seeds() do
    [
-     "http://seed1.cityofzion.io:8080",
-     "http://seed2.cityofzion.io:8080",
-     "http://seed3.cityofzion.io:8080",
-     "http://seed4.cityofzion.io:8080",
-     "http://seed5.cityofzion.io:8080",
-     "http://api.otcgo.cn:10332",
-     "http://seed1.neo.org:10332",
-     "http://seed2.neo.org:10332",
-     "http://seed3.neo.org:10332",
-     "http://seed4.neo.org:10332",
-     "http://seed5.neo.org:10332"
+     "http://test1.cityofzion.io:8880",
+     "http://test2.cityofzion.io:8880",
+     "http://test3.cityofzion.io:8880",
+     "http://test4.cityofzion.io:8880",
+     "http://test5.cityofzion.io:8880",
+     "http://api.otcgo.cn:20332",
+     "http://seed1.neo.org:20332",
+     "http://seed2.neo.org:20332",
+     "http://seed3.neo.org:20332",
+     "http://seed4.neo.org:20332",
+     "http://seed5.neo.org:20332"
    ]
   end
 
