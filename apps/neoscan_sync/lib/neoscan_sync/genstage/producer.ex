@@ -66,15 +66,17 @@ defmodule NeoscanSync.Producer do
     nodes = check_if_nodes(2)
     cond do
       nodes != nil ->
-        [random1, random2] = nodes
+        #turn off cross check in testnet
+        [random1, _random2] = nodes
         blockA = get_block_by_height(random1, height)
-        blockB = get_block_by_height(random2, height)
-        cond do
-          blockA == blockB ->
-            blockA
-          true ->
-            cross_check(height)
-        end
+        blockA
+        #blockB = get_block_by_height(random2, height)
+        # cond do
+        #   blockA == blockB ->
+        #     blockA
+        #   true ->
+        #     cross_check(height)
+        # end
       true ->
         cross_check(height)
     end
